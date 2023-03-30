@@ -37,7 +37,7 @@
                   <button type="submit" class="btn btn-primary ms-2" @click.prevent="InsertElement">Invio</button>
                 </div>
             </form>
-            <h2 class="text-center text-white cursor-pointer">Lista componenti:</h2>
+            <h2 class="text-center text-white">Lista componenti:</h2>
             <div class="d-flex justify-content-center">
               <ul class="list-group w-50 pt-4" v-if="listComponent.length > 0">
                 <li class="list-group-item d-flex justify-content-between align-items-center" :class="{ active: listComponent[index].active}" v-for="(component, index) of listComponent">
@@ -45,7 +45,7 @@
                   <button class="btn btn-danger" @click="deleteElement(index)"><i class="fa-regular fa-trash-can"></i></button>
                 </li>
               </ul>
-            <h2 v-else class="text-warning fs-1 p-5">La lista è vuota</h2>
+              <h2 v-else class="text-warning fs-1 p-5">La lista è vuota</h2>
             </div>
         </div>
     </div>
