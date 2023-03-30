@@ -23,8 +23,7 @@ createApp({
     data(){
         return{
            listComponent: [],
-            newComponent : '',
-            brand : ''
+            newComponent : ''
         }
     },
     methods: {
@@ -45,6 +44,9 @@ createApp({
         },
         deleteElement(index){
             this.listComponent.splice(index, 1)
+        },
+        done(index){
+            this.listComponent[index].active = true;
         }
       }
 }).mount('#app');
