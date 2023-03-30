@@ -34,10 +34,12 @@ createApp({
             if(this.newComponent && this.brand){
                 const addNewElement = {
                     name: this.newComponent,
+                    brand: this.brand,
                     active: false
                 }
                 this.listComponent.push(addNewElement);
                 this.newComponent = '';
+                this.brand = '';
             }
             console.log(this.listComponent);
         }
