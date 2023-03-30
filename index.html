@@ -41,7 +41,7 @@
               <ul class="list-group w-50 pt-4" v-if="listComponent.length > 0">
                 <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(component, index) of listComponent">
                   <span>{{component.brand}}: {{component.name}}</span>
-                  <button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+                  <button class="btn btn-danger" @click="deleteElement(index)"><i class="fa-regular fa-trash-can"></i></button>
                 </li>
             </ul>
             <h2 v-else class="text-warning fs-1 p-5">La lista è vuota</h2>

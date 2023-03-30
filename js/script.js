@@ -42,6 +42,9 @@ createApp({
                 this.brand = '';
             }
             console.log(this.listComponent);
+        },
+        deleteElement(index){
+            this.listComponent.splice(index, 1)
         }
       }
 }).mount('#app');
