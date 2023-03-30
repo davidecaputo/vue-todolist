@@ -19,10 +19,10 @@
                     <label class="form-label fs-4 text-white w-50">Inserisci qui il componente che vuoi acquistare</label>
                     <label class="form-label fs-4 text-white ms-2">Marca</label>
                   </div>
-                  <input type="text" class="form-control w-50 d-inline-block" name="element" id="element">
-                  <select class="form-select w-25 d-inline-block ms-2" v-model="newElement">
+                  <input type="text" class="form-control w-50 d-inline-block" name="element" id="element" v-model="newComponent">
+                  <select class="form-select w-25 d-inline-block ms-2" v-model="brand">
                     <option value="Nvidia" selected>Nvidia</option>
-                    <option value="Intel" selected>Intel</option>
+                    <option value="Intel">Intel</option>
                     <option value="MSI">MSI</option>
                     <option value="Lenovo">Lenovo</option>
                     <option value="HP">HP</option>
