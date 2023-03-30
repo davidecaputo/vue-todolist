@@ -22,8 +22,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
-           listComponent: [],
-            newComponent : ''
+           listComponent: []
         }
     },
     methods: {
@@ -46,7 +45,7 @@ createApp({
             this.listComponent.splice(index, 1)
         },
         done(index){
-            this.listComponent[index].active = true;
+            this.listComponent[index].active = !this.listComponent[index].active;
         }
       }
 }).mount('#app');
