@@ -8,7 +8,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="bg-info">
+    <div id="app">
+        <div class="container p-5">
+            <h1 class="text-white text-center text-uppercase">Assembla il tuo pc</h1>
+            <form>  
+                <div class="mb-3">
+                  <div>
+                    <label class="form-label fs-4 text-white w-50">Inserisci qui il componente che vuoi acquistare</label>
+                    <label class="form-label fs-4 text-white ms-2">Marca</label>
+                  </div>
+                  <input type="text" class="form-control w-50 d-inline-block" name="element" id="element">
+                  <select class="form-select w-25 d-inline-block ms-2" v-model="newElement">
+                    <option value="Nvidia" selected>Nvidia</option>
+                    <option value="Intel" selected>Intel</option>
+                    <option value="MSI">MSI</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="HP">HP</option>
+                    <option value="Razer">Razer</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Microsoft">Microsoft</option>
+                  </select>
+                  <button type="submit" class="btn btn-primary ms-2" @click.prevent="InsertElement">Invio</button>
+                </div>
+            </form>
+            <h2 class="text-center text-white">Lista componenti:</h2>
+            <div class="d-flex justify-content-center">
+              <ul class="list-group w-50">
+                  <li class="list-group-item active" aria-current="true">An active item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+        </div>
+    </div>
     
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
